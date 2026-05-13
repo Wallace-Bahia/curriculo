@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" type="image/png" href="IMG/ICONE.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wallace Bahia | Engenheiro da Computação</title>
+  <link href="CSS/style.css" rel="stylesheet" type="text/css" />
+  <!-- Font Awesome para ícones modernos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts para tipografia moderna -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- EFEITO DE CURSOR PERSONALIZADO -->
+  <div class="cursor-glow"></div>
+  <div class="cursor-dot"></div>
+
+  <!-- OVERLAY DE CARREGAMENTO -->
+  <div class="loading-overlay">
+    <div class="loader"></div>
+  </div>
+
+  <!-- CABEÇALHO / NAVEGAÇÃO -->
+  <header class="cabecalho">
+    <div class="container cabecalho-container">
+      <div class="logo-area">
+        <a href="#inicio" class="logo-link">
+          <span class="logo-nome">Wallace Bahia</span>
+          <span class="logo-detalhe">&lt;dev/&gt;</span>
+        </a>
+      </div>
+
+      <!-- MENU DESKTOP -->
+      <nav class="menu-principal">
+        <ul class="menu-lista">
+          <li class="menu-item"><a href="#sobre" class="menu-link">SOBRE</a></li>
+          <li class="menu-item"><a href="#experiencia" class="menu-link">EXPERIÊNCIA</a></li>
+          <li class="menu-item"><a href="#formacao" class="menu-link">FORMAÇÃO</a></li>
+          <li class="menu-item"><a href="#habilidades" class="menu-link">HABILIDADES</a></li>
+          <li class="menu-item"><a href="#contato" class="menu-link">CONTATO</a></li>
+        </ul>
+      </nav>
+
+      <!-- MENU MOBILE HAMBURGUER -->
+      <div class="menu-mobile-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- MENU MOBILE OVERLAY -->
+  <div class="mobile-overlay">
+    <ul class="mobile-lista">
+      <li><a href="#sobre">SOBRE</a></li>
+      <li><a href="#experiencia">EXPERIÊNCIA</a></li>
+      <li><a href="#formacao">FORMAÇÃO</a></li>
+      <li><a href="#habilidades">HABILIDADES</a></li>
+      <li><a href="#contato">CONTATO</a></li>
+    </ul>
+  </div>
+
+  <!-- SEÇÃO HERO / INÍCIO -->
+  <section id="inicio" class="hero-section">
+    <div class="particles-container"></div>
+    <div class="container hero-container">
+      <div class="hero-conteudo">
+        <div class="hero-texto">
+          <span class="hero-saudacao">Olá, eu sou</span>
+          <h1 class="hero-nome">Wallace Bahia</h1>
+          <div class="hero-titulo-container">
+            <span class="hero-titulo-fixo">Engenheiro da Computação</span>
+            <span class="hero-titulo-digitando"></span>
+          </div>
+          <p class="hero-descricao">Tenho 23 anos, estou no 4° ano da Engenharia da Computação. Busco oportunidades na área de TI para aprender mais e contribuir com soluções inovadoras.</p>
+          <div class="hero-botoes">
+            <a href="#contato" class="btn btn-primario">Vamos Conversar <i class="fas fa-arrow-right"></i></a>
+            <a href="#experiencia" class="btn btn-secundario">Veja meu trabalho <i class="fas fa-code"></i></a>
+          </div>
+        </div>
+        <div class="hero-imagem">
+          <div class="imagem-wrapper">
+            <img id="minhafoto" src="IMG/20221121_163440.jpg" alt="Wallace Bahia">
+            <div class="imagem-border"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>Scroll</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- SEÇÃO SOBRE MIM -->
+  <section id="sobre" class="sobre-section">
+    <div class="container">
+      <div class="secao-header">
+        <span class="secao-tag">Quem sou</span>
+        <h2 class="secao-titulo">Sobre Mim</h2>
+        <div class="secao-linha"></div>
+      </div>
+      <div class="sobre-conteudo">
+        <div class="sobre-texto">
+          <p>Sou um futuro engenheiro da computação apaixonado por tecnologia e soluções inovadoras. Gosto de aprender e desenvolver novas habilidades, buscando sempre me atualizar no mundo da programação e desenvolvimento de sistemas.</p>
+          <div class="sobre-info-grid">
+            <div class="info-card">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h4>Localização</h4>
+                <p>São José dos Campos, SP</p>
+              </div>
+            </div>
+            <div class="info-card">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h4>E-mail</h4>
+                <p>wallacecpbahia@gmail.com</p>
+              </div>
+            </div>
+            <div class="info-card">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h4>Telefone</h4>
+                <p>(12) 99211-7906</p>
+              </div>
+            </div>
+            <div class="info-card">
+              <i class="fas fa-calendar-alt"></i>
+              <div>
+                <h4>Nascimento</h4>
+                <p>23 de Junho de 1999</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sobre-stats">
+          <div class="stat-item">
+            <span class="stat-numero" data-target="4">0</span>
+            <span class="stat-label">Anos de Estudo</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-numero" data-target="6">0</span>
+            <span class="stat-label">Tecnologias</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-numero" data-target="10">0</span>
+            <span class="stat-label">Projetos</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO EXPERIÊNCIA PROFISSIONAL -->
+  <section id="experiencia" class="experiencia-section">
+    <div class="container">
+      <div class="secao-header">
+        <span class="secao-tag">Trajetória</span>
+        <h2 class="secao-titulo">Experiência Profissional</h2>
+        <div class="secao-linha"></div>
+      </div>
+      <div class="timeline-container">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-data">07/2020 - Atual</div>
+            <h3 class="timeline-cargo">Almoxarife</h3>
+            <h4 class="timeline-empresa">D.F. Chaves Departamentos e Magazine</h4>
+            <p>Armazenava itens de maneira ordenada e acessível. Recepcionava, conferia quantidade e qualidade e armazenava produtos. Controlava todo recebimento de mercadorias, conferia e lançava as entradas e saídas no sistema de controle de estoque. Periodicamente faço inspeção no almoxarifado e faço a expedição de produtos.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-data">05/2018 - 05/2019</div>
+            <h3 class="timeline-cargo">Operador de Telemarketing</h3>
+            <h4 class="timeline-empresa">Atento Brasil S/A</h4>
+            <p>Responsável por fazer ligações e abordar novos clientes, passar informações e características dos produtos, sanar dúvidas, fazer cadastro de novos clientes e leitura de contrato.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO FORMAÇÃO ACADÊMICA -->
+  <section id="formacao" class="formacao-section">
+    <div class="container">
+      <div class="secao-header">
+        <span class="secao-tag">Educação</span>
+        <h2 class="secao-titulo">Formação Acadêmica</h2>
+        <div class="secao-linha"></div>
+      </div>
+      <div class="formacao-grid">
+        <div class="formacao-card">
+          <div class="formacao-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="formacao-periodo">01/2020 - 12/2024</div>
+          <h3 class="formacao-curso">Engenharia da Computação</h3>
+          <p class="formacao-instituicao">Centro Univ. Internacional – Uninter</p>
+          <div class="formacao-status">Cursando - 4° Ano</div>
+        </div>
+        <div class="formacao-card">
+          <div class="formacao-icon">
+            <i class="fas fa-school"></i>
+          </div>
+          <div class="formacao-periodo">Concluído</div>
+          <h3 class="formacao-curso">Ensino Médio</h3>
+          <p class="formacao-instituicao">E.E Valmar Lourenco Santiago Professor</p>
+          <div class="formacao-status">Completo</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO HABILIDADES TÉCNICAS -->
+  <section id="habilidades" class="habilidades-section">
+    <div class="container">
+      <div class="secao-header">
+        <span class="secao-tag">Competências</span>
+        <h2 class="secao-titulo">Habilidades Técnicas</h2>
+        <div class="secao-linha"></div>
+      </div>
+      <div class="habilidades-grid">
+        <div class="habilidade-card">
+          <div class="habilidade-icon">
+            <i class="fab fa-html5"></i>
+          </div>
+          <h3 class="habilidade-nome">HTML5</h3>
+          <div class="habilidade-bar">
+            <div class="habilidade-progresso" data-level="75"></div>
+          </div>
+          <span class="habilidade-nivel">Intermediário</span>
+        </div>
+        <div class="habilidade-card">
+          <div class="habilidade-icon">
+            <i class="fab fa-css3-alt"></i>
+          </div>
+          <h3 class="habilidade-nome">CSS3</h3>
+          <div class="habilidade-bar">
+            <div class="habilidade-progresso" data-level="75"></div>
+          </div>
+          <span class="habilidade-nivel">Intermediário</span>
+        </div>
+        <div class="habilidade-card">
+          <div class="habilidade-icon">
+            <i class="fab fa-js"></i>
+          </div>
+          <h3 class="habilidade-nome">JavaScript</h3>
+          <div class="habilidade-bar">
+            <div class="habilidade-progresso" data-level="50"></div>
+          </div>
+          <span class="habilidade-nivel">Básico</span>
+        </div>
+        <div class="habilidade-card">
+          <div class="habilidade-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3 class="habilidade-nome">C/C++</h3>
+          <div class="habilidade-bar">
+            <div class="habilidade-progresso" data-level="50"></div>
+          </div>
+          <span class="habilidade-nivel">Básico</span>
+        </div>
+        <div class="habilidade-card">
+          <div class="habilidade-icon">
+            <i class="fas fa-file-excel"></i>
+          </div>
+          <h3 class="habilidade-nome">Microsoft Excel</h3>
+          <div class="habilidade-bar">
+            <div class="habilidade-progresso" data-level="70"></div>
+          </div>
+          <span class="habilidade-nivel">Intermediário</span>
+        </div>
+        <div class="habilidade-card">
+          <div class="habilidade-icon">
+            <i class="fab fa-windows"></i>
+          </div>
+          <h3 class="habilidade-nome">Microsoft Word</h3>
+          <div class="habilidade-bar">
+            <div class="habilidade-progresso" data-level="40"></div>
+          </div>
+          <span class="habilidade-nivel">Básico</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO SOFT SKILLS -->
+  <section class="softskills-section">
+    <div class="container">
+      <div class="softskills-header">
+        <h3 class="softskills-titulo">Soft Skills</h3>
+      </div>
+      <div class="softskills-grid">
+        <div class="softskill-item">
+          <i class="fas fa-comments"></i>
+          <span>Comunicação</span>
+        </div>
+        <div class="softskill-item">
+          <i class="fas fa-users"></i>
+          <span>Trabalho em Equipe</span>
+        </div>
+        <div class="softskill-item">
+          <i class="fas fa-lightbulb"></i>
+          <span>Resolução de Problemas</span>
+        </div>
+        <div class="softskill-item">
+          <i class="fas fa-brain"></i>
+          <span>Disciplina</span>
+        </div>
+        <div class="softskill-item">
+          <i class="fas fa-paint-brush"></i>
+          <span>Criatividade</span>
+        </div>
+        <div class="softskill-item">
+          <i class="fas fa-sync-alt"></i>
+          <span>Adaptabilidade</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO REDES SOCIAIS -->
+  <section id="redes-sociais" class="redes-section">
+    <div class="container">
+      <div class="redes-container">
+        <h3 class="redes-titulo">Conecte-se comigo</h3>
+        <div class="redes-links">
+          <a href="https://www.linkedin.com/in/wallace-bahia-5057b7186/" class="rede-link linkedin" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://www.instagram.com/wallace.bahia/" class="rede-link instagram" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://web.facebook.com/wallace.correia.395" class="rede-link facebook" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://github.com/" class="rede-link github" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO CONTATO -->
+  <section id="contato" class="contato-section">
+    <div class="container">
+      <div class="secao-header">
+        <span class="secao-tag">Vamos Trabalhar Juntos</span>
+        <h2 class="secao-titulo">Entre em Contato</h2>
+        <div class="secao-linha"></div>
+      </div>
+      <div class="contato-conteudo">
+        <div class="contato-info">
+          <div class="contato-card">
+            <div class="contato-icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <div>
+              <h4>Telefone / WhatsApp</h4>
+              <p>(12) 99211-7906</p>
+              <a href="https://web.whatsapp.com/send?phone=5512992117906" class="contato-link">Enviar mensagem <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="contato-card">
+            <div class="contato-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div>
+              <h4>E-mail</h4>
+              <p>wallacecpbahia@gmail.com</p>
+              <a href="mailto:wallacecpbahia@gmail.com" class="contato-link">Enviar e-mail <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="contato-card">
+            <div class="contato-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div>
+              <h4>Endereço</h4>
+              <p>Rua Vicente Donati Nunes, 252<br>São José dos Campos, SP - CEP: 12226-714</p>
+            </div>
+          </div>
+        </div>
+        <form class="contato-form" id="form-contato">
+          <div class="form-group">
+            <input type="text" id="nome" placeholder="Seu nome" required>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder="Seu e-mail" required>
+          </div>
+          <div class="form-group">
+            <input type="text" id="assunto" placeholder="Assunto">
+          </div>
+          <div class="form-group">
+            <textarea id="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-enviar">
+            Enviar Mensagem <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer class="rodape">
+    <div class="container">
+      <div class="rodape-conteudo">
+        <p class="rodape-texto">© 2024 Criado por Wallace Bahia. Todos os direitos reservados.</p>
+        <p class="rodape-dev">Desenvolvido com <i class="fas fa-heart"></i> para a comunidade tech</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="JS/script.js"></script>
+</body>
+
+</html>
